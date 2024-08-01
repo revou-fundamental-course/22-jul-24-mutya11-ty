@@ -97,7 +97,7 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url("../assets/vacation.jpg");
+  background-image: url("/22-jul-24-mutya11-ty/assets/vacation.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -170,6 +170,35 @@ body {
 .about h2 span {
   color: var(--primary);
 }
+
+.about .row {
+  display: flex;
+}
+
+.about .row .about-img {
+  flex: 1 1 45rem;
+}
+
+.about .row .about-img img {
+  width: 75%;
+}
+
+.about .row .content {
+  flex: 1 1 30rem;
+  padding: 0 1rem;
+}
+
+.about .row .content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.about .row .content p {
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+  font-weight: 100;
+  line-height: 1.6;
+}
 /* Media Queries */
 
 /* Laptop */
@@ -216,6 +245,10 @@ body {
 
 .navbar .navbar-nav a:hover::after {
   transform: scaleX(0, 2);
+}
+
+.about .row {
+  flex-wrap: wrap;
 }
 
 /* Mobile Phone */
